@@ -1,0 +1,31 @@
+{
+  "name": "console-relay",
+  "version": "0.1.0",
+  "description": "Expose your browser console as a local API for automation and AI agents.",
+  "bin": {
+    "console-relay": "bin/console-relay.js"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "start": "node bin/console-relay.js",
+    "dev": "node bin/console-relay.js"
+  },
+  "keywords": [
+    "chrome",
+    "console",
+    "devtools",
+    "logs",
+    "automation"
+  ],
+  "author": "Console Relay Contributors",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "chrome-launcher": "^0.15.0",
+    "chrome-remote-interface": "^0.33.0",
+    "express": "^4.19.2",
+    "yargs": "^17.7.2"
+  }
+}

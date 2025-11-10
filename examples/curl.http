@@ -1,0 +1,13 @@
+### Fetch latest 200 logs
+GET http://127.0.0.1:7070/logs?n=200
+
+### Fetch only warnings and errors
+GET http://127.0.0.1:7070/logs?level=warn,error
+
+### Stream logs with curl
+GET http://127.0.0.1:7070/logs/stream
+Accept: text/event-stream
+
+### Fetch logs with token
+GET http://127.0.0.1:7070/logs?n=50
+Authorization: Bearer mytoken
